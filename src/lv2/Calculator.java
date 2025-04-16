@@ -5,8 +5,10 @@ import java.util.List;
 
 public class Calculator {
 
+    //결과값 저장 배열 필드
     private List<Integer> results = new ArrayList<>();
 
+    //사칙연산 메서드
     public int calculate(int num1, int num2, char operator) {
         int result = 0;
 
@@ -21,23 +23,24 @@ public class Calculator {
                 result = num1 * num2;
                 break;
             case '/':
-                if (num2 == 0) {
-                    System.out.println("0으로 나눌 수 없습니다.");
-                }
                 result = num1 / num2;
                 break;
             default:
-                System.out.println("잘못된 값입니다. 다시 입력해주세요 !");
-
+                throw new IllegalArgumentException();
         }
+
         results.add(result);
         return result;
     }
 
-
+    //Getter
     public List<Integer> getResults() {
         return results;
     }
 
+    //Setter
+    public void setResults(List<Integer> results) {
+        this.results = results;
+    }
 }
 
