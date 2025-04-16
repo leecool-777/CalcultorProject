@@ -35,6 +35,7 @@ public class App {
 
             System.out.println("결과: " + result);
 
+
             System.out.print("더 계산하시겠습니까? (exit 입력시 종료, 계산을 원하시면 엔터를 눌러주세요 !) : ");
             String option = scanner.nextLine();
 
