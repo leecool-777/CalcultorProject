@@ -12,6 +12,7 @@ public class App {
         System.out.println("           계산기           ");
         System.out.println("===========================");
 
+
         while (true) {
             try {
                 System.out.print("첫 번째 숫자를 입력하세요: ");
@@ -21,7 +22,6 @@ public class App {
                     continue;
                 }
 
-
                 System.out.print("두 번째 숫자를 입력하세요: ");
                 int num2 = scanner.nextInt();
                 if (num2 < 0) {
@@ -29,14 +29,17 @@ public class App {
                     continue;
                 }
 
-
                 System.out.print("사칙연산 기호를 입력하세요(+ - * /): ");
                 char operator = scanner.next().charAt(0);
                 scanner.nextLine();//Scanner 버퍼 정리
 
                 //입력값 전달 및 연산 결과 반환
                 int result = calculator.calculate(num1, num2, operator);
+                System.out.println("===========================");
                 System.out.println("결과: " + result);
+                System.out.println("결과 데이터: " + calculator.getResults());
+                System.out.println("===========================");
+
 
                 //예외 처리
             } catch (ArithmeticException e) {
@@ -51,11 +54,18 @@ public class App {
                 continue;
             }
 
-            System.out.print("더 계산하시겠습니까? (exit 입력시 종료, 계산을 원하시면 엔터를 눌러주세요 !) : ");
+
+            System.out.print("계속하시려면 엔터를, 종료하려면 'exit', 결과 삭제는 'delete'를 입력하세요: ");
             String option = scanner.nextLine();
             if (option.equals("exit")) {
                 System.out.println("계산기를 종료합니다.");
                 break;
+            }
+            //가장 먼저 저장된 데이터 삭제
+            else if (option.equals("delete")) {
+                calculator.removeResult();
+                System.out.println("결과값을 삭제했습니다.");
+                System.out.println("결과 데이터: " + calculator.getResults());
             }
         }
     }
