@@ -26,10 +26,9 @@ public class App {
                 continue;
             }
 
-            System.out.print("사칙연산 기호를 입력하세요(+ - * %): ");
+            System.out.print("사칙연산 기호를 입력하세요(+ - * /): ");
             char cal = scanner.next().charAt(0);
             scanner.nextLine();
-
 
             int result = 0;
             switch (cal) {
@@ -42,15 +41,18 @@ public class App {
                 case '*':
                     result = num1 * num2;
                     break;
-                case '%':
+                case '/':
                     if (num1 == 0 || num2 == 0) {
                         System.out.println("0으로 나눌 수 없습니다.");
-                        break;
+                        continue;
                     }
                     result = num1 / num2;
                     break;
-
+                default:
+                    System.out.println("잘못된 값입니다. 다시 입력해주세요 !");
+                    continue;
             }
+
             System.out.println("결과: " + result);
 
             System.out.print("더 계산하시겠습니까? (exit 입력시 종료, 계산을 원하시면 엔터를 눌러주세요 !) : ");
