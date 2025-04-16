@@ -42,7 +42,7 @@ public class App {
                     result = num1 * num2;
                     break;
                 case '/':
-                    if (num1 == 0 || num2 == 0) {
+                    if (num2 == 0) {
                         System.out.println("0으로 나눌 수 없습니다.");
                         continue;
                     }
