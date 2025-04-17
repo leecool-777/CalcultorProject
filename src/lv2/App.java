@@ -43,14 +43,14 @@ public class App {
 
                 //예외 처리
             } catch (ArithmeticException e) {
-                System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+                System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다."); //분모 0 예외처리
                 continue;
             } catch (InputMismatchException e) {
-                System.out.println("잘못된 값입니다. 양의 정수를 입력하세요");
+                System.out.println("잘못된 값입니다. 양의 정수를 입력하세요"); // 잘못된 값(문자열, 실수 등) 예외처리
                 scanner.nextLine(); //Scanner 버퍼 정리
                 continue;
             } catch (IllegalArgumentException e) {
-                System.out.println("잘못된 값입니다. 사칙연산 기호를 입력해주세요");
+                System.out.println("잘못된 값입니다. 사칙연산 기호를 입력해주세요"); //잘못된 값 (사칙연산 외) 예외처리
                 continue;
             }
 
