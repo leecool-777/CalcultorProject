@@ -42,11 +42,7 @@ public class App {
             //입력값 전달 및 연산 결과 반환
             System.out.println("===========================");
             Number result = arithmeticCalculator.calculate(a, b, calOperator);
-            if (result.doubleValue() == result.intValue()) {
-                System.out.println("결과: " + result.intValue());
-            } else {
-                System.out.println("결과: " + result.doubleValue());
-            }
+            System.out.println("결과: " + result);
             System.out.println("결과 데이터: " + arithmeticCalculator.getResults());
             System.out.println("===========================");
 
