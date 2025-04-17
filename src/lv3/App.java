@@ -82,8 +82,13 @@ public class App {
                             + arithmeticCalculator.compareToNum(compareNum) + "입니다.");
                 }
                 //예외처리
-            } catch (Exception e) {
-                System.out.println("잘못된 값입니다. 처음부터 다시 시작해주세요.");
+            } catch (NumberFormatException e) {
+                System.out.println("잘못된 값입니다. 다시 입력해주세요.");
+            } catch (ArithmeticException e) {
+                System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+            } catch (IllegalArgumentException e) {
+                System.out.println("잘못된 값입니다. 사칙연산 기호를 입력해주세요");
+                scanner.nextLine();
             }
         }
     }

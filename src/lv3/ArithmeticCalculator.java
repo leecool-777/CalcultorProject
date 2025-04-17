@@ -9,7 +9,7 @@ public class ArithmeticCalculator<T extends Number> {
 
     private List<Number> results = new ArrayList<>();
 
-    public Number calculate(T num1, T num2, OperatorType operator) {
+    public Number calculate(T num1, T num2, OperatorType operator) throws IllegalArgumentException {
 
         Number result; //결과 변수 선언
 
@@ -22,16 +22,24 @@ public class ArithmeticCalculator<T extends Number> {
                 case PLUS -> num1.intValue() + num2.intValue();
                 case MINUS -> num1.intValue() - num2.intValue();
                 case MULTIPLE -> num1.intValue() * num2.intValue();
-                case DIV ->  (double) num1.intValue() / num2.intValue();
-                default -> throw new IllegalArgumentException();
+                case DIV -> {
+                    if (num2.intValue() == 0) {
+                        throw new ArithmeticException("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+                    }
+                    yield (double) num1.intValue() / num2.intValue();
+                }
             };
         } else {
             result = switch (operator) {
                 case PLUS -> num1.doubleValue() + num2.doubleValue();
                 case MINUS -> num1.doubleValue() - num2.doubleValue();
                 case MULTIPLE -> num1.doubleValue() * num2.doubleValue();
-                case DIV -> num1.doubleValue() / num2.doubleValue();
-                default -> throw new IllegalArgumentException();
+                case DIV -> {
+                    if (num2.intValue() == 0) {
+                        throw new ArithmeticException();
+                    }
+                    yield num1.doubleValue() / num2.doubleValue();
+                }
             };
         }
         results.add(result); //결과값 배열에 추가
