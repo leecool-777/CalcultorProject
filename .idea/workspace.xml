@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="주석추가">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="기타 파일 커밋" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,6 +60,7 @@
     "Application.lv2.App.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Siwon/Desktop/스파르타/CalculatorProject/CalculatorProject",
@@ -246,7 +244,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744801311282</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="기타 파일 커밋">
+      <option name="closed" value="true" />
+      <created>1744850575970</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1744850575970</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +269,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="lv2" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -289,7 +295,8 @@
     <MESSAGE value="lv1 예외처리 추가" />
     <MESSAGE value="결과삭제 메서드 추가" />
     <MESSAGE value="결과삭제 메서드 추가, 메인메서드 출력 멘트 수정 및 데이터 삭제 옵션 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="결과삭제 메서드 추가, 메인메서드 출력 멘트 수정 및 데이터 삭제 옵션 추가" />
+    <MESSAGE value="기타 파일 커밋" />
+    <option name="LAST_COMMIT_MESSAGE" value="기타 파일 커밋" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
