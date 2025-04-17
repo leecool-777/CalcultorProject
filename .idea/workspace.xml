@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="lv3 메인메서드 변수 이름 수정">
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="향상된 switch문으로 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv1/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorProject/lv1/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorProject/lv1/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CalculatorProject/lv2/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorProject/lv2/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -305,7 +306,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744876350962</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="향상된 switch문으로 변경">
+      <option name="closed" value="true" />
+      <created>1744876633407</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1744876633407</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +361,8 @@
     <MESSAGE value="lv3 사칙연산 타입 enum 추가, 제네릭 클래스 ArithmeticCalculator 내 calculate 기능 추가 메인메서드 결과처리 추가" />
     <MESSAGE value="lv3 계산기 메서드 수정(복붙실수) 메인메서드 결과if문 수정(원복)" />
     <MESSAGE value="lv3 메인메서드 변수 이름 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="lv3 메인메서드 변수 이름 수정" />
+    <MESSAGE value="향상된 switch문으로 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="향상된 switch문으로 변경" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
