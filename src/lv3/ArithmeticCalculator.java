@@ -11,14 +11,18 @@ public class ArithmeticCalculator<T extends Number> {
 
     public Number calculate(T num1, T num2, OperatorType operator) {
 
-        Number result;
+        Number result; //결과 변수 선언
 
+        /*
+        두 개의 입력값 모두 정수일 경우 Integer로 결과 반환 및 저장(나눗셈은 Double)
+        실수일 경우 Double로 결과 반환 및 저장
+         */
         if (num1 instanceof Integer && num2 instanceof Integer) {
             result = switch (operator) {
                 case PLUS -> num1.intValue() + num2.intValue();
                 case MINUS -> num1.intValue() - num2.intValue();
                 case MULTIPLE -> num1.intValue() * num2.intValue();
-                case DIV ->  num1.intValue() / num2.intValue();
+                case DIV ->  (double) num1.intValue() / num2.intValue();
                 default -> throw new IllegalArgumentException();
             };
         } else {
@@ -31,7 +35,7 @@ public class ArithmeticCalculator<T extends Number> {
             };
         }
         results.add(result); //결과값 배열에 추가
-        return result;
+        return result; //결과값 반환
     }
 
     //저장결과 조회 메서드
@@ -50,6 +54,10 @@ public class ArithmeticCalculator<T extends Number> {
         results.remove(0);
     }
 
+    /*
+    입력된 값보다 큰 데이터 조회 메서드
+    (실수 비교)
+    */
     public List<Number>  compareToNum(T compareNum) {
         return results.stream()
                 .filter(number -> number.doubleValue() > compareNum.doubleValue())
