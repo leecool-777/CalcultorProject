@@ -10,24 +10,13 @@ public class Calculator {
 
     //사칙연산 메서드
     public int calculate(int num1, int num2, char operator) {
-        int result;
-
-        switch (operator) {
-            case '+':
-                result = num1 + num2;
-                break;
-            case '-':
-                result = num1 - num2;
-                break;
-            case '*':
-                result = num1 * num2;
-                break;
-            case '/':
-                result = num1 / num2;
-                break;
-            default:
-                throw new IllegalArgumentException();
-        }
+        int result = switch (operator) {
+            case '+' -> num1 + num2;
+            case '-' -> num1 - num2;
+            case '*' -> num1 * num2;
+            case '/' -> num1 / num2;
+            default -> throw new IllegalArgumentException();
+        };
 
         results.add(result); //결과값 배열에 추가
         return result; //결과값 반환

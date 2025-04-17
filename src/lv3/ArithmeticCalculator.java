@@ -13,39 +13,21 @@ public class ArithmeticCalculator<T extends Number> {
         Number result;
 
         if (num1 instanceof Integer && num2 instanceof Integer) {
-            switch (operator) {
-                case PLUS:
-                    result = num1.intValue() + num2.intValue();
-                    break;
-                case MINUS:
-                    result = num1.intValue() - num2.intValue();
-                    break;
-                case MULTIPLE:
-                    result = num1.intValue() * num2.intValue();
-                    break;
-                case DIV:
-                    result = (double) num1.intValue() / num2.intValue();
-                    break;
-                default:
-                    throw new IllegalArgumentException();
-            }
+            result = switch (operator) {
+                case PLUS -> num1.intValue() + num2.intValue();
+                case MINUS -> num1.intValue() - num2.intValue();
+                case MULTIPLE -> num1.intValue() * num2.intValue();
+                case DIV -> (double) num1.intValue() / num2.intValue();
+                default -> throw new IllegalArgumentException();
+            };
         } else {
-            switch (operator) {
-                case PLUS:
-                    result = num1.doubleValue() + num2.doubleValue();
-                    break;
-                case MINUS:
-                    result = num1.doubleValue() - num2.doubleValue();
-                    break;
-                case MULTIPLE:
-                    result = num1.doubleValue() * num2.doubleValue();
-                    break;
-                case DIV:
-                    result = num1.doubleValue() / num2.doubleValue();
-                    break;
-                default:
-                    throw new IllegalArgumentException();
-            }
+            result = switch (operator) {
+                case PLUS -> num1.doubleValue() + num2.doubleValue();
+                case MINUS -> num1.doubleValue() - num2.doubleValue();
+                case MULTIPLE -> num1.doubleValue() * num2.doubleValue();
+                case DIV -> num1.doubleValue() / num2.doubleValue();
+                default -> throw new IllegalArgumentException();
+            };
         }
         results.add(result); //결과값 배열에 추가
         return result;

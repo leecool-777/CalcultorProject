@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="기타 파일 커밋">
-      <change afterPath="$PROJECT_DIR$/src/lv3/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lv3/OperatorType.java" afterDir="false" />
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="lv3 메인메서드 변수 이름 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CalculatorProject/lv2/Calculator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CalculatorProject/lv2/Calculator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv1/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv1/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv2/Calculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv2/Calculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,7 +281,31 @@
       <option name="project" value="LOCAL" />
       <updated>1744850897452</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="lv3 사칙연산 타입 enum 추가, 제네릭 클래스 ArithmeticCalculator 내 calculate 기능 추가 메인메서드 결과처리 추가">
+      <option name="closed" value="true" />
+      <created>1744873950830</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1744873950830</updated>
+    </task>
+    <task id="LOCAL-00018" summary="lv3 계산기 메서드 수정(복붙실수) 메인메서드 결과if문 수정(원복)">
+      <option name="closed" value="true" />
+      <created>1744875098528</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1744875098528</updated>
+    </task>
+    <task id="LOCAL-00019" summary="lv3 메인메서드 변수 이름 수정">
+      <option name="closed" value="true" />
+      <created>1744876350962</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1744876350962</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +322,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -327,7 +349,10 @@
     <MESSAGE value="결과삭제 메서드 추가" />
     <MESSAGE value="결과삭제 메서드 추가, 메인메서드 출력 멘트 수정 및 데이터 삭제 옵션 추가" />
     <MESSAGE value="기타 파일 커밋" />
-    <option name="LAST_COMMIT_MESSAGE" value="기타 파일 커밋" />
+    <MESSAGE value="lv3 사칙연산 타입 enum 추가, 제네릭 클래스 ArithmeticCalculator 내 calculate 기능 추가 메인메서드 결과처리 추가" />
+    <MESSAGE value="lv3 계산기 메서드 수정(복붙실수) 메인메서드 결과if문 수정(원복)" />
+    <MESSAGE value="lv3 메인메서드 변수 이름 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="lv3 메인메서드 변수 이름 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

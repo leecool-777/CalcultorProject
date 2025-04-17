@@ -35,25 +35,20 @@ public class App {
                 //사칙연산 수행
                 int result = 0;
                 switch (cal) {
-                    case '+':
-                        result = num1 + num2;
-                        break;
-                    case '-':
-                        result = num1 - num2;
-                        break;
-                    case '*':
-                        result = num1 * num2;
-                        break;
-                    case '/':
+                    case '+' -> result = num1 + num2;
+                    case '-' -> result = num1 - num2;
+                    case '*' -> result = num1 * num2;
+                    case '/' -> {
                         if (num2 == 0) {
                             System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
                             continue;
                         }
                         result = num1 / num2;
-                        break;
-                    default:
+                    }
+                    default -> {
                         System.out.println("잘못된 값입니다. 다시 입력해주세요 !");
                         continue;
+                    }
                 }
                 System.out.println("결과: " + result);
 
