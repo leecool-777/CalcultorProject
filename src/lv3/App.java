@@ -51,6 +51,7 @@ public class App {
                 System.out.println("결과 데이터: " + arithmeticCalculator.getResults());
                 System.out.println("===========================");
 
+
                 System.out.print("계속하시려면 엔터를, 종료하려면 'exit', 결과 삭제는 'delete'를, 값 비교는 'compare'를 입력해주세요: ");
                 String option = scanner.nextLine();
 

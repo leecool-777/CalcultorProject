@@ -9,7 +9,7 @@ public class ArithmeticCalculator<T extends Number> {
 
     private List<Number> results = new ArrayList<>();
 
-    public Number calculate(T num1, T num2, OperatorType operator) throws IllegalArgumentException {
+    public Number calculate(T num1, T num2, OperatorType operator) {
 
         Number result; //결과 변수 선언
 
@@ -66,7 +66,7 @@ public class ArithmeticCalculator<T extends Number> {
     입력된 값보다 큰 데이터 조회 메서드
     (실수 비교)
     */
-    public List<Number>  compareToNum(T compareNum) {
+    public List<Number> compareToNum(T compareNum) {
         return results.stream()
                 .filter(number -> number.doubleValue() > compareNum.doubleValue())
                 .collect(Collectors.toList());

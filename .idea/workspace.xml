@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="lv3 예외처리 및 주석추가">
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="나눗셈 수정(분모0일경우 예외 발생), 스캐너 버퍼 문제 수정">
+      <change afterPath="$PROJECT_DIR$/src/lv3Ref/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lv3Ref/ArithmeticCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lv3Ref/OperatorType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lv3Ref/SplitService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/lv3Ref/test/ArithmeticCalculatorTestTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CalculatorProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/OperatorType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +25,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -64,31 +72,57 @@
     "Application.App.executor": "Debug",
     "Application.lv2.App.executor": "Run",
     "Application.lv3.App.executor": "Run",
+    "Application.lv3Ref.App.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.ArithmeticCalculatorTestTest.testAiddtion.executor": "Run",
+    "JUnit.ArithmeticCalculatorTestTest.testCal.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "extract.method.default.visibility": "private",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Siwon/Desktop/스파르타/CalculatorProject/CalculatorProject",
+    "last_opened_file_path": "C:/Users/Siwon/Desktop/스파르타/CalculatorProject/CalculatorProject/src/lv3Ref",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+    "settings.editor.selected.configurable": "preferences.language.and.region",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.lv3.App.executor": "Run"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.lv3.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lv1.App" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Siwon\Desktop\스파르타\CalculatorProject\CalculatorProject\src\lv3Ref" />
+      <recent name="C:\Users\Siwon\Desktop\스파르타\CalculatorProject\CalculatorProject\src\lv4" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="lv3Ref" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="lv3Ref.test" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.lv3Ref.App">
+    <configuration name="lv2.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lv2.App" />
       <module name="CalculatorProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lv1.*" />
+          <option name="PATTERN" value="lv2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lv2.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lv2.App" />
+    <configuration name="lv3Ref.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lv3Ref.App" />
       <module name="CalculatorProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lv2.*" />
+          <option name="PATTERN" value="lv3Ref.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -122,11 +156,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ArithmeticCalculatorTestTest.testAiddtion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalculatorProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lv3Ref.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lv3Ref.test" />
+      <option name="MAIN_CLASS_NAME" value="lv3Ref.test.ArithmeticCalculatorTestTest" />
+      <option name="METHOD_NAME" value="testAiddtion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ArithmeticCalculatorTestTest.testCal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CalculatorProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lv3Ref.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="lv3Ref.test" />
+      <option name="MAIN_CLASS_NAME" value="lv3Ref.test.ArithmeticCalculatorTestTest" />
+      <option name="METHOD_NAME" value="testCal" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lv3Ref.App" />
+        <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testCal" />
+        <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testAiddtion" />
         <item itemvalue="Application.lv3.App" />
-        <item itemvalue="Application.lv2.App" />
-        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -151,6 +218,8 @@
       <workItem from="1744790134812" duration="8559000" />
       <workItem from="1744799452595" duration="1065000" />
       <workItem from="1744800536331" duration="1308000" />
+      <workItem from="1744936470352" duration="881000" />
+      <workItem from="1744937477415" duration="10776000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -328,7 +397,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744889290215</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="나눗셈 수정(분모0일경우 예외 발생), 스캐너 버퍼 문제 수정">
+      <option name="closed" value="true" />
+      <created>1744890945086</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1744890945086</updated>
+    </task>
+    <task id="LOCAL-00024" summary="나눗셈 수정(분모0일경우 예외 발생), 스캐너 버퍼 문제 수정">
+      <option name="closed" value="true" />
+      <created>1744892134442</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1744892134442</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +465,8 @@
     <MESSAGE value="lv3 예외처리 및 주석추가" />
     <MESSAGE value="lv3 예외처리 및 주석추가" />
     <MESSAGE value="lv3 compareToNum 메서드 구현 (람다 &amp; 스트림)" />
-    <option name="LAST_COMMIT_MESSAGE" value="lv3 compareToNum 메서드 구현 (람다 &amp; 스트림)" />
+    <MESSAGE value="나눗셈 수정(분모0일경우 예외 발생), 스캐너 버퍼 문제 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="나눗셈 수정(분모0일경우 예외 발생), 스캐너 버퍼 문제 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -18,7 +18,7 @@ public enum OperatorType {
             if (value.cal == c) {
                 return value;
             }
-        }throw new IllegalArgumentException();
+        }
+        throw new IllegalArgumentException();
     }
-
 }
