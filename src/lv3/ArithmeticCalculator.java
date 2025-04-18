@@ -6,16 +6,15 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class ArithmeticCalculator<T extends Number> {
-
     private List<Number> results = new ArrayList<>();
 
-    public Number calculate(T num1, T num2, OperatorType operator) {
+    public Number calculate(T num1, T num2, OperatorType operator){
 
         Number result; //결과 변수 선언
 
-        /*
-        두 개의 입력값 모두 정수일 경우 Integer로 결과 반환 및 저장(나눗셈은 Double)
-        실수일 경우 Double로 결과 반환 및 저장
+        /**
+         두 개의 입력값 모두 정수일 경우 Integer로 결과 반환 및 저장(나눗셈은 Double)
+         실수일 경우 Double로 결과 반환 및 저장
          */
         if (num1 instanceof Integer && num2 instanceof Integer) {
             result = switch (operator) {
@@ -29,7 +28,7 @@ public class ArithmeticCalculator<T extends Number> {
                     yield (double) num1.intValue() / num2.intValue();
                 }
             };
-        } else {
+        }else {
             result = switch (operator) {
                 case PLUS -> num1.doubleValue() + num2.doubleValue();
                 case MINUS -> num1.doubleValue() - num2.doubleValue();
@@ -45,6 +44,16 @@ public class ArithmeticCalculator<T extends Number> {
         results.add(result); //결과값 배열에 추가
         return result; //결과값 반환
     }
+
+    //문자열 파싱
+    public Number parseIntegerOrDouble(String input) {
+        if (input.contains(".")) {
+            return Double.parseDouble(input);
+        } else {
+            return Integer.parseInt(input);
+        }
+    }
+
 
     //저장결과 조회 메서드
     public List<Number> getResults() {

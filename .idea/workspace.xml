@@ -4,17 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="나눗셈 수정(분모0일경우 예외 발생), 스캐너 버퍼 문제 수정">
-      <change afterPath="$PROJECT_DIR$/src/lv3Ref/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lv3Ref/ArithmeticCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lv3Ref/OperatorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lv3Ref/SplitService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/lv3Ref/test/ArithmeticCalculatorTestTest.java" afterDir="false" />
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="리팩토링 시작">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalculatorProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CalculatorProject.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/OperatorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3Ref/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3Ref/ArithmeticCalculator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3Ref/OperatorType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3Ref/SplitService.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +216,7 @@
       <workItem from="1744799452595" duration="1065000" />
       <workItem from="1744800536331" duration="1308000" />
       <workItem from="1744936470352" duration="881000" />
-      <workItem from="1744937477415" duration="10776000" />
+      <workItem from="1744937477415" duration="20600000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -413,7 +410,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744892134442</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="계산기 기능 구현">
+      <option name="closed" value="true" />
+      <created>1744956095275</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1744956095275</updated>
+    </task>
+    <task id="LOCAL-00026" summary="리팩토링 시작">
+      <option name="closed" value="true" />
+      <created>1744956112059</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1744956112059</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -466,7 +479,9 @@
     <MESSAGE value="lv3 예외처리 및 주석추가" />
     <MESSAGE value="lv3 compareToNum 메서드 구현 (람다 &amp; 스트림)" />
     <MESSAGE value="나눗셈 수정(분모0일경우 예외 발생), 스캐너 버퍼 문제 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="나눗셈 수정(분모0일경우 예외 발생), 스캐너 버퍼 문제 수정" />
+    <MESSAGE value="계산기 기능 구현" />
+    <MESSAGE value="리팩토링 시작" />
+    <option name="LAST_COMMIT_MESSAGE" value="리팩토링 시작" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
