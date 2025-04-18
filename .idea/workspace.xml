@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="변수 이름 수정">
-      <change afterPath="$PROJECT_DIR$/src/lv3ref/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lv3ref/ArithmeticCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lv3ref/OperatorType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/lv3ref/ResultData.java" afterDir="false" />
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="ResultData 클래스 추가 및 리팩토링">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/OperatorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3ref/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3ref/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/OperatorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3ref/ResultData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/ResultData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +217,7 @@
       <workItem from="1744799452595" duration="1065000" />
       <workItem from="1744800536331" duration="1308000" />
       <workItem from="1744936470352" duration="881000" />
-      <workItem from="1744937477415" duration="26579000" />
+      <workItem from="1744937477415" duration="28552000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -451,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744971646771</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="ResultData 클래스 추가 및 리팩토링">
+      <option name="closed" value="true" />
+      <created>1744973860903</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1744973860903</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -481,7 +489,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lv1 완성" />
     <MESSAGE value="lv2 Calculator 클래스 계산기능구현" />
     <MESSAGE value="lv2 Calculator 클래스 결과값 저장 배열 및 getter 구현" />
     <MESSAGE value="lv2 Calculator 클래스 사칙연산 메서드 디폴트 case 예외 발생 추가, 메인메서드 예외처리 추가" />
@@ -506,7 +513,8 @@
     <MESSAGE value="리팩토링 삭제 및 lv3 메인메서드 if문 수정 문자열 파싱 메서드 추가" />
     <MESSAGE value="변수 및 메서드 이름 수정" />
     <MESSAGE value="변수 이름 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="변수 이름 수정" />
+    <MESSAGE value="ResultData 클래스 추가 및 리팩토링" />
+    <option name="LAST_COMMIT_MESSAGE" value="ResultData 클래스 추가 및 리팩토링" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

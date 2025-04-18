@@ -6,9 +6,10 @@ import java.util.stream.Collectors;
 
 public class ResultData <T extends Number> {
 
-    private List<Number> results = new ArrayList<>();
+    private final List<Number> results = new ArrayList<>();
 
-    public void add(Number result) {
+    //결과 데이터 추가
+    public void addResult(Number result) {
         results.add(result);
     }
 

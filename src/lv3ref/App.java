@@ -37,7 +37,7 @@ public class App {
 
                 //입력값 전달 및 연산 결과 반환
                 Number result = arithmeticCalculator.calculate(num1, num2, OperatorType.getOperatorType(operator));
-                resultData.add(result);
+                resultData.addResult(result);
 
                 System.out.println("===========================");
                 System.out.println("결과: " + result);
