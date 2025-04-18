@@ -62,7 +62,7 @@ public class App {
                         String inputNum3 = scanner.nextLine();
                         Number compareNum = arithmeticCalculator.parseIntegerOrDouble(inputNum3);
                         System.out.println("결과값 중 " + compareNum + "보다 큰 데이터는 "
-                                + resultData.findGreaterThan(compareNum) + "입니다.");
+                                + resultData.printGreaterThan(compareNum) + "입니다.");
                         break;
                 }
 

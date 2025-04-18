@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ResultData <T extends Number> {
+public class ResultData<T extends Number> {
 
     private final List<Number> results = new ArrayList<>();
 
@@ -29,7 +29,7 @@ public class ResultData <T extends Number> {
     입력된 값보다 큰 데이터 조회 메서드
     (실수 비교)
     */
-    public List<Number> findGreaterThan(Number compareNum) {
+    public List<Number> printGreaterThan(T compareNum) {
         return results.stream()
                 .filter(number -> number.doubleValue() > compareNum.doubleValue())
                 .collect(Collectors.toList());

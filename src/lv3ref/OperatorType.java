@@ -1,7 +1,5 @@
 package lv3ref;
 
-
-
 public enum OperatorType {
     PLUS('+'),
     MINUS('-'),
