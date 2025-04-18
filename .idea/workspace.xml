@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="리팩토링 삭제 및 lv3 메인메서드 if문 수정 문자열 파싱 메서드 추가">
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="변수 및 메서드 이름 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/OperatorType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +212,7 @@
       <workItem from="1744799452595" duration="1065000" />
       <workItem from="1744800536331" duration="1308000" />
       <workItem from="1744936470352" duration="881000" />
-      <workItem from="1744937477415" duration="22826000" />
+      <workItem from="1744937477415" duration="24258000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -431,7 +430,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744967929810</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="변수 및 메서드 이름 수정">
+      <option name="closed" value="true" />
+      <created>1744970299011</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1744970299011</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,7 +468,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="second test commit" />
     <MESSAGE value="사칙연산 오류 출력값 추가" />
     <MESSAGE value="lv1 완성" />
     <MESSAGE value="lv2 Calculator 클래스 계산기능구현" />
@@ -486,7 +492,8 @@
     <MESSAGE value="계산기 기능 구현" />
     <MESSAGE value="리팩토링 시작" />
     <MESSAGE value="리팩토링 삭제 및 lv3 메인메서드 if문 수정 문자열 파싱 메서드 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="리팩토링 삭제 및 lv3 메인메서드 if문 수정 문자열 파싱 메서드 추가" />
+    <MESSAGE value="변수 및 메서드 이름 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="변수 및 메서드 이름 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

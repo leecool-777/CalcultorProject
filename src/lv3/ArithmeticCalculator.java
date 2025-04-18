@@ -75,7 +75,7 @@ public class ArithmeticCalculator<T extends Number> {
     입력된 값보다 큰 데이터 조회 메서드
     (실수 비교)
     */
-    public List<Number> compareToNum(T compareNum) {
+    public List<Number> findGreaterThan(T compareNum) {
         return results.stream()
                 .filter(number -> number.doubleValue() > compareNum.doubleValue())
                 .collect(Collectors.toList());

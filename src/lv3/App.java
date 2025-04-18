@@ -60,7 +60,7 @@ public class App {
                             String inputNum3 = scanner.nextLine();
                             Number compareNum = arithmeticCalculator.parseIntegerOrDouble(inputNum3);
                             System.out.println("결과값 중 " + compareNum + "보다 큰 데이터는 "
-                                    + arithmeticCalculator.compareToNum(compareNum) + "입니다.");
+                                    + arithmeticCalculator.findGreaterThan(compareNum) + "입니다.");
                             break;
                     }
 
@@ -72,7 +72,6 @@ public class App {
                     System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
                 } catch (IllegalArgumentException e) {
                     System.out.println("잘못된 값입니다. 사칙연산 기호를 입력해주세요");
-                    scanner.nextLine();
                 }
             }
         }
