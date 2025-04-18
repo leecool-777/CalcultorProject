@@ -32,11 +32,10 @@ public class App {
                     //사칙연산 입력
                     System.out.print("사칙연산 기호를 입력하세요(+ - * /): ");
                     char operator = scanner.next().charAt(0);
-                    OperatorType calOperator = OperatorType.findValue(operator);
                     scanner.nextLine();//Scanner 버퍼 정리
 
                     //입력값 전달 및 연산 결과 반환
-                    Number result = arithmeticCalculator.calculate(num1, num2, calOperator);
+                    Number result = arithmeticCalculator.calculate(num1, num2, OperatorType.getOperatorType(operator));
 
                     System.out.println("===========================");
                     System.out.println("결과: " + result);

@@ -3,19 +3,19 @@ package lv3;
 public enum OperatorType {
     PLUS('+'),
     MINUS('-'),
-    MULTIPLE('*'),
-    DIV('/');
+    MULTIPLY('*'),
+    DIVIDE('/');
 
-    private char cal;
+    private char oprator;
 
 
-    OperatorType(char a) {
-        this.cal = a;
+    OperatorType(char operator) {
+        this.oprator = operator;
     }
 
-    public static OperatorType findValue(char c) {
+    public static OperatorType getOperatorType(char intputOprator) {
         for (OperatorType value : OperatorType.values()) {
-            if (value.cal == c) {
+            if (value.oprator == intputOprator) {
                 return value;
             }
         }

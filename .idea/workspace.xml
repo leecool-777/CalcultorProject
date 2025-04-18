@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="리팩토링 시작">
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="리팩토링 삭제 및 lv3 메인메서드 if문 수정 문자열 파싱 메서드 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3Ref/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3Ref/ArithmeticCalculator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3Ref/OperatorType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3Ref/SplitService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/OperatorType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +110,7 @@
       <recent name="lv3Ref.test" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.lv3Ref.App">
+  <component name="RunManager" selected="Application.lv3.App">
     <configuration name="lv2.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lv2.App" />
       <module name="CalculatorProject" />
@@ -187,10 +184,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.lv3.App" />
         <item itemvalue="Application.lv3Ref.App" />
         <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testCal" />
         <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testAiddtion" />
-        <item itemvalue="Application.lv3.App" />
       </list>
     </recent_temporary>
   </component>
@@ -216,7 +213,7 @@
       <workItem from="1744799452595" duration="1065000" />
       <workItem from="1744800536331" duration="1308000" />
       <workItem from="1744936470352" duration="881000" />
-      <workItem from="1744937477415" duration="20600000" />
+      <workItem from="1744937477415" duration="22826000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -426,7 +423,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744956112059</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="리팩토링 삭제 및 lv3 메인메서드 if문 수정 문자열 파싱 메서드 추가">
+      <option name="closed" value="true" />
+      <created>1744967929810</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1744967929810</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -456,7 +461,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first commit" />
     <MESSAGE value="second test commit" />
     <MESSAGE value="사칙연산 오류 출력값 추가" />
     <MESSAGE value="lv1 완성" />
@@ -481,7 +485,8 @@
     <MESSAGE value="나눗셈 수정(분모0일경우 예외 발생), 스캐너 버퍼 문제 수정" />
     <MESSAGE value="계산기 기능 구현" />
     <MESSAGE value="리팩토링 시작" />
-    <option name="LAST_COMMIT_MESSAGE" value="리팩토링 시작" />
+    <MESSAGE value="리팩토링 삭제 및 lv3 메인메서드 if문 수정 문자열 파싱 메서드 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="리팩토링 삭제 및 lv3 메인메서드 if문 수정 문자열 파싱 메서드 추가" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

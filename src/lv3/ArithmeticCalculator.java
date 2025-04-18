@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 public class ArithmeticCalculator<T extends Number> {
     private List<Number> results = new ArrayList<>();
 
-    public Number calculate(T num1, T num2, OperatorType operator){
+    public Number calculate(T num1, T num2, OperatorType operatorType){
 
         Number result; //결과 변수 선언
 
@@ -17,11 +17,11 @@ public class ArithmeticCalculator<T extends Number> {
          실수일 경우 Double로 결과 반환 및 저장
          */
         if (num1 instanceof Integer && num2 instanceof Integer) {
-            result = switch (operator) {
+            result = switch (operatorType) {
                 case PLUS -> num1.intValue() + num2.intValue();
                 case MINUS -> num1.intValue() - num2.intValue();
-                case MULTIPLE -> num1.intValue() * num2.intValue();
-                case DIV -> {
+                case MULTIPLY -> num1.intValue() * num2.intValue();
+                case DIVIDE -> {
                     if (num2.intValue() == 0) {
                         throw new ArithmeticException("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
                     }
@@ -29,11 +29,11 @@ public class ArithmeticCalculator<T extends Number> {
                 }
             };
         }else {
-            result = switch (operator) {
+            result = switch (operatorType) {
                 case PLUS -> num1.doubleValue() + num2.doubleValue();
                 case MINUS -> num1.doubleValue() - num2.doubleValue();
-                case MULTIPLE -> num1.doubleValue() * num2.doubleValue();
-                case DIV -> {
+                case MULTIPLY -> num1.doubleValue() * num2.doubleValue();
+                case DIVIDE -> {
                     if (num2.intValue() == 0) {
                         throw new ArithmeticException();
                     }
