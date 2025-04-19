@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="오타 수정">
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="오타 수정 및 이름 변경">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3/ArithmeticCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3ref/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3ref/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/ArithmeticCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3ref/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/OperatorType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/ResultData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/ResultData.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,41 +61,41 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Debug",
-    "Application.lv2.App.executor": "Run",
-    "Application.lv3.App.executor": "Run",
-    "Application.lv3Ref.App.executor": "Run",
-    "Application.lv3ref.App.executor": "Run",
-    "Downloaded.Files.Path.Enabled": "false",
-    "JUnit.ArithmeticCalculatorTestTest.testAiddtion.executor": "Run",
-    "JUnit.ArithmeticCalculatorTestTest.testCal.executor": "Run",
-    "Repository.Attach.Annotations": "false",
-    "Repository.Attach.JavaDocs": "false",
-    "Repository.Attach.Sources": "false",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Siwon/Desktop/스파르타/CalculatorProject/CalculatorProject/src/lv3ref",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.language.and.region",
-    "vue.rearranger.settings.migration": "true",
-    "애플리케이션.lv3.App.executor": "Run"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.lv2.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.lv3.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.lv3Ref.App.executor&quot;: &quot;Run&quot;,
+    &quot;Application.lv3ref.App.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.ArithmeticCalculatorTestTest.testAiddtion.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ArithmeticCalculatorTestTest.testCal.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Siwon/Desktop/스파르타/CalculatorProject/CalculatorProject/src/lv3ref&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.language.and.region&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;애플리케이션.lv3.App.executor&quot;: &quot;Run&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Siwon\Desktop\스파르타\CalculatorProject\CalculatorProject\src\lv3ref" />
@@ -190,7 +188,6 @@
       <list>
         <item itemvalue="Application.lv3ref.App" />
         <item itemvalue="Application.lv3.App" />
-        <item itemvalue="Application.lv3Ref.App" />
         <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testCal" />
         <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testAiddtion" />
       </list>
@@ -218,7 +215,9 @@
       <workItem from="1744799452595" duration="1065000" />
       <workItem from="1744800536331" duration="1308000" />
       <workItem from="1744936470352" duration="881000" />
-      <workItem from="1744937477415" duration="30918000" />
+      <workItem from="1744937477415" duration="33156000" />
+      <workItem from="1745017787465" duration="1107000" />
+      <workItem from="1745053314069" duration="886000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -468,7 +467,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744975964889</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="오타 수정 및 이름 변경">
+      <option name="closed" value="true" />
+      <created>1744978980158</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1744978980158</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -498,7 +505,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lv2 Calculator 클래스 결과값 저장 배열 및 getter 구현" />
     <MESSAGE value="lv2 Calculator 클래스 사칙연산 메서드 디폴트 case 예외 발생 추가, 메인메서드 예외처리 추가" />
     <MESSAGE value="데이터 삭제 메서드 추가, 메인메서드 멘트 수정 및 데이터 삭제 옵션 추가" />
     <MESSAGE value="예외처리 추가" />
@@ -523,7 +529,8 @@
     <MESSAGE value="변수 이름 수정" />
     <MESSAGE value="ResultData 클래스 추가 및 리팩토링" />
     <MESSAGE value="오타 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="오타 수정" />
+    <MESSAGE value="오타 수정 및 이름 변경" />
+    <option name="LAST_COMMIT_MESSAGE" value="오타 수정 및 이름 변경" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

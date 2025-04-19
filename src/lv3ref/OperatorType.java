@@ -14,6 +14,9 @@ public enum OperatorType {
     }
 
     public static OperatorType getOperatorType(char inputOperator) {
+
+
+
         for (OperatorType operatorType : OperatorType.values()) {
             if (operatorType.operator == inputOperator) {
                 return operatorType;

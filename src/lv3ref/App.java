@@ -21,13 +21,13 @@ public class App {
                 // 입력 1
                 System.out.print("첫 번째 숫자를 입력하세요: ");
                 String inputNum1 = scanner.nextLine();
-                Number num1 = arithmeticCalculator.parseIntegerOrDouble(inputNum1); //문자열 파싱
+                Number num1 = parseIntegerOrDouble(inputNum1); //문자열 파싱
 
 
                 //입력 2
                 System.out.print("두 번째 숫자를 입력하세요: ");
                 String inputNum2 = scanner.nextLine();
-                Number num2 = arithmeticCalculator.parseIntegerOrDouble(inputNum2); //문자열 파싱
+                Number num2 = parseIntegerOrDouble(inputNum2); //문자열 파싱
 
 
                 //사칙연산 입력
@@ -60,21 +60,29 @@ public class App {
                     case "compare":
                         System.out.print("결과 데이터에서 비교할 값을 입력해 주세요. 그 값보다 큰 데이터들이 출력됩니다. : ");
                         String inputNum3 = scanner.nextLine();
-                        Number compareNum = arithmeticCalculator.parseIntegerOrDouble(inputNum3);
+                        Number compareNum = parseIntegerOrDouble(inputNum3);
                         System.out.println("결과값 중 " + compareNum + "보다 큰 데이터는 "
                                 + resultData.printGreaterThan(compareNum) + "입니다.");
                         break;
                 }
 
-
                 //예외처리
             } catch (NumberFormatException e) {
-                System.out.println("잘못된 값입니다. 다시 입력해주세요.");
+                System.out.println("[오류] 잘못된 값입니다. 다시 입력해주세요.");
             } catch (ArithmeticException e) {
-                System.out.println("나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
+                System.out.println("[오류] 나눗셈 연산에서 분모(두번째 정수)에 0이 입력될 수 없습니다.");
             } catch (IllegalArgumentException e) {
-                System.out.println("잘못된 값입니다. 사칙연산 기호를 입력해주세요");
+                System.out.println("[오류] 잘못된 값입니다. 사칙연산 기호를 입력해주세요.");
             }
         }
+    }
+
+    //문자열 파싱
+    public static Number parseIntegerOrDouble(String input) {
+        if (input.contains(".")) {
+            return Double.parseDouble(input);
+        }
+        return Integer.parseInt(input);
+
     }
 }
