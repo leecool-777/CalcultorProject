@@ -21,8 +21,10 @@ public class ResultData<T extends Number> {
 
 
     //가장 먼저 저장된 데이터 삭제 메서드
-    public void removeResult() {
+    public void removeFirstResult() {
         results.remove(0);
+        System.out.println("결과값을 삭제했습니다.");
+        System.out.println("결과 데이터: " + getResults());
     }
 
     /*
@@ -33,6 +35,5 @@ public class ResultData<T extends Number> {
         return results.stream()
                 .filter(number -> number.doubleValue() > compareNum.doubleValue())
                 .collect(Collectors.toList());
-
     }
 }

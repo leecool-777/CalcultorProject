@@ -52,15 +52,13 @@ public class App {
                         System.out.println("프로그램을 종료합니다.");
                         break label;
                     case "delete":
-                        resultData.removeResult();
-                        System.out.println("결과값을 삭제했습니다.");
-                        System.out.println("결과 데이터: " + resultData.getResults());
+                        resultData.removeFirstResult();
                         break;
                     //값 비교
                     case "compare":
                         System.out.print("결과 데이터에서 비교할 값을 입력해 주세요. 그 값보다 큰 데이터들이 출력됩니다. : ");
-                        String inputNum3 = scanner.nextLine();
-                        Number compareNum = parseIntegerOrDouble(inputNum3);
+                        String inputCompareNum = scanner.nextLine();
+                        Number compareNum = parseIntegerOrDouble(inputCompareNum);
                         System.out.println("결과값 중 " + compareNum + "보다 큰 데이터는 "
                                 + resultData.printGreaterThan(compareNum) + "입니다.");
                         break;
@@ -83,6 +81,5 @@ public class App {
             return Double.parseDouble(input);
         }
         return Integer.parseInt(input);
-
     }
 }
