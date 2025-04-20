@@ -32,8 +32,8 @@ public class ResultData<T extends Number> {
     (실수 비교)
     */
     public List<Number> printGreaterThan(T compareNum) {
-        return results.stream()
-                .filter(number -> number.doubleValue() > compareNum.doubleValue())
-                .collect(Collectors.toList());
+        return results.stream() //1. 데이터 준비
+                .filter(number -> number.doubleValue() > compareNum.doubleValue()) //2. 중간 연산 등록
+                .collect(Collectors.toList()); //3. 최종 연산
     }
 }

@@ -10,9 +10,9 @@ public class App {
         ResultData<Number> resultData = new ResultData<>();
 
 
-        System.out.println("===========================");
-        System.out.println("           계산기           ");
-        System.out.println("===========================");
+        System.out.println("==========================================");
+        System.out.println("                   계산기                  ");
+        System.out.println("==========================================");
 
         label:
         while (true) {
@@ -39,10 +39,10 @@ public class App {
                 Number result = arithmeticCalculator.calculate(num1, num2, OperatorType.getOperatorType(operator));
                 resultData.addResult(result);
 
-                System.out.println("===========================");
+                System.out.println("==========================================");
                 System.out.println("결과: " + result);
                 System.out.println("결과 데이터: " + resultData.getResults());
-                System.out.println("===========================");
+                System.out.println("==========================================");
 
 
                 System.out.print("계속하시려면 엔터를, 종료하려면 'exit', 결과 삭제는 'delete'를, 값 비교는 'compare'를 입력해주세요: ");
@@ -76,7 +76,7 @@ public class App {
     }
 
     //문자열 파싱
-    public static Number parseIntegerOrDouble(String input) {
+    static Number parseIntegerOrDouble(String input) {
         if (input.contains(".")) {
             return Double.parseDouble(input);
         }
