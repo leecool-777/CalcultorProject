@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="데이터 삭제 메서드 출력메세지 추가 및 이름 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/ArithmeticCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/ResultData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/ResultData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3ref/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/OperatorType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -227,6 +225,9 @@
       <workItem from="1745124151345" duration="8653000" />
       <workItem from="1745138943142" duration="145000" />
       <workItem from="1745139113901" duration="145000" />
+      <workItem from="1745193736936" duration="399000" />
+      <workItem from="1745213037233" duration="599000" />
+      <workItem from="1745216782455" duration="349000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />

@@ -1,5 +1,9 @@
 package lv3ref;
 
+import lv3ref.arithmeticcalculator.ArithmeticCalculator;
+import lv3ref.arithmeticcalculator.OperatorType;
+import lv3ref.arithmeticcalculator.ResultStore;
+
 import java.util.Scanner;
 
 public class App {
@@ -7,7 +11,7 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         ArithmeticCalculator<Number> arithmeticCalculator = new ArithmeticCalculator<>();
-        ResultData<Number> resultData = new ResultData<>();
+        ResultStore<Number> resultData = new ResultStore<>();
 
 
         System.out.println("==========================================");
@@ -60,7 +64,7 @@ public class App {
                         String inputCompareNum = scanner.nextLine();
                         Number compareNum = parseIntegerOrDouble(inputCompareNum);
                         System.out.println("결과값 중 " + compareNum + "보다 큰 데이터는 "
-                                + resultData.printGreaterThan(compareNum) + "입니다.");
+                                + resultData.findGreaterThan(compareNum) + "입니다.");
                         break;
                 }
 

@@ -1,10 +1,10 @@
-package lv3ref;
+package lv3ref.arithmeticcalculator;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class ResultData<T extends Number> {
+public class ResultStore<T extends Number> {
 
     private final List<Number> results = new ArrayList<>();
 
@@ -31,7 +31,7 @@ public class ResultData<T extends Number> {
     입력된 값보다 큰 데이터 조회 메서드
     (실수 비교)
     */
-    public List<Number> printGreaterThan(T compareNum) {
+    public List<Number> findGreaterThan(T compareNum) {
         return results.stream() //1. 데이터 준비
                 .filter(number -> number.doubleValue() > compareNum.doubleValue()) //2. 중간 연산 등록
                 .collect(Collectors.toList()); //3. 최종 연산
