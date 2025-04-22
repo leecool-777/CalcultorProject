@@ -1,4 +1,4 @@
-package lv3ref.print;
+package lv3ref.util;
 
 import lv3ref.arithmeticcalculator.ResultStore;
 

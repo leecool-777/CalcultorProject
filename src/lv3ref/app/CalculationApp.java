@@ -3,7 +3,9 @@ package lv3ref.app;
 import lv3ref.arithmeticcalculator.Calculator;
 import lv3ref.arithmeticcalculator.OperatorType;
 import lv3ref.arithmeticcalculator.ResultStore;
-import lv3ref.print.ConsolePrinter;
+import lv3ref.util.ConsolePrinter;
+
+import static lv3ref.util.ParseToIntegerOrDouble.parseToIntegerOrDouble;
 
 import java.util.Scanner;
 
@@ -18,15 +20,9 @@ public class CalculationApp {
         this.calculator = calculator;
     }
 
-    //기능
-    //문자열 파싱
-    private static Number parseIntegerOrDouble(String input) {
-        if (input.contains(".")) {
-            return Double.parseDouble(input);
-        }
-        return Integer.parseInt(input);
-    }
-
+    /**
+     * 실행 흐름제어
+     */
     public void start() {
         Scanner scanner = new Scanner(System.in);
 
@@ -39,12 +35,12 @@ public class CalculationApp {
                 // 입력 1
                 System.out.print("첫 번째 숫자를 입력하세요: ");
                 String inputNum1 = scanner.nextLine();
-                Number num1 = parseIntegerOrDouble(inputNum1); //문자열 파싱
+                Number num1 = parseToIntegerOrDouble(inputNum1); //문자열 파싱
 
                 //입력 2
                 System.out.print("두 번째 숫자를 입력하세요: ");
                 String inputNum2 = scanner.nextLine();
-                Number num2 = parseIntegerOrDouble(inputNum2); //문자열 파싱
+                Number num2 = parseToIntegerOrDouble(inputNum2); //문자열 파싱
 
                 //사칙연산 입력
                 System.out.print("사칙연산 기호를 입력하세요(+ - * /): ");
@@ -68,12 +64,12 @@ public class CalculationApp {
                         break;
                     case "deleteAll":
                         resultStore.removeAllResult();
-                        break ;
+                        break;
                     //값 비교
                     case "compare":
                         System.out.printf("결과 데이터에서 비교할 값을 입력해 주세요.%n그 값보다 큰 데이터들이 출력됩니다: ");
                         String inputCompareNum = scanner.nextLine();
-                        resultStore.findGreaterThan(parseIntegerOrDouble(inputCompareNum));
+                        resultStore.findGreaterThan(parseToIntegerOrDouble(inputCompareNum));
                         break;
                 }
                 ConsolePrinter.printLine();
