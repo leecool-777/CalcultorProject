@@ -29,6 +29,12 @@ public class ResultStore {
         System.out.println("결과 데이터: " + getResultStore());
     }
 
+    public void removeAllResult() {
+        resultStore.removeAll(resultStore);
+        System.out.println("모든 결과값을 삭제했습니다.");
+        System.out.println("결과 데이터: " + getResultStore());
+    }
+
 
     /*
     입력된 값보다 큰 데이터 조회 메서드
