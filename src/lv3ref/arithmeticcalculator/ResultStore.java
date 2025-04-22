@@ -26,7 +26,7 @@ public class ResultStore {
 
     //전체 삭제
     public void removeAllResult() {
-        resultStore.removeAll(resultStore);
+        resultStore.clear();
         System.out.println("모든 결과값을 삭제했습니다.");
         System.out.println("결과 데이터: " + getResultStore());
     }

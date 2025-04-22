@@ -101,6 +101,4 @@ src
 
 ## 🔥더 자세한 내용은 아래 블로그 글을 참고 바랍니다 !
 
-<div align="center">
 <a href="https://siwon0726.tistory.com/74"><img src="https://img.shields.io/badge/Tistory%20계산기%20프로젝트-F16521?style=for-the-badge&logo=tistory&logoColor=white"/></a>
-</div>
