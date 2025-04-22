@@ -10,6 +10,7 @@ public class Calculator<T extends Number> {
     public Number calculate(T num1, T num2, OperatorType operatorType) {
 
         Number result;
+        //정수와 정수 연산 일 때
         if (num1 instanceof Integer && num2 instanceof Integer) {
             result = switch (operatorType) {
                 case PLUS -> num1.intValue() + num2.intValue();
