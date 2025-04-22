@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="findGreaterThan 메서드 검증로직 추가 및 출력메세지 추가">
-      <change afterPath="$PROJECT_DIR$/src/lv3ref/print/ConsolePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/app/CalculationApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/app/CalculationApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/Calculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ResultStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ResultStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +236,7 @@
       <workItem from="1745238393968" duration="2325000" />
       <workItem from="1745277183125" duration="21299000" />
       <workItem from="1745303155942" duration="3550000" />
-      <workItem from="1745306741830" duration="5295000" />
+      <workItem from="1745306741830" duration="9359000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -564,7 +558,39 @@
       <option name="project" value="LOCAL" />
       <updated>1745311905144</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="검증로직 오타수정">
+      <option name="closed" value="true" />
+      <created>1745312137440</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1745312137440</updated>
+    </task>
+    <task id="LOCAL-00042" summary="콘솔프린터 클래스 추가 및 출력 메세지 수정 ArithmeticCalculator클래스 -&gt; Calculator로 이름 수정">
+      <option name="closed" value="true" />
+      <created>1745312871951</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1745312871951</updated>
+    </task>
+    <task id="LOCAL-00043" summary="파싱 메서드 분리">
+      <option name="closed" value="true" />
+      <created>1745313374712</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1745313374712</updated>
+    </task>
+    <task id="LOCAL-00044" summary="주석 수정 및 코드 정렬">
+      <option name="closed" value="true" />
+      <created>1745315357291</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1745315357291</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -594,10 +620,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lv3 사칙연산 타입 enum 추가, 제네릭 클래스 ArithmeticCalculator 내 calculate 기능 추가 메인메서드 결과처리 추가" />
-    <MESSAGE value="lv3 계산기 메서드 수정(복붙실수) 메인메서드 결과if문 수정(원복)" />
-    <MESSAGE value="lv3 메인메서드 변수 이름 수정" />
-    <MESSAGE value="향상된 switch문으로 변경" />
     <MESSAGE value="lv3 compareToNum 메서드 구현 (람다 &amp; 스트림)" />
     <MESSAGE value="lv3 예외처리 및 주석추가" />
     <MESSAGE value="lv3 예외처리 및 주석추가" />
@@ -619,7 +641,11 @@
     <MESSAGE value="파싱 메서드 접근제어자 private 변경, OperatorType 변수, 메서드 이름 변경" />
     <MESSAGE value="모든 결과 삭제 기능 추가" />
     <MESSAGE value="findGreaterThan 메서드 검증로직 추가 및 출력메세지 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="findGreaterThan 메서드 검증로직 추가 및 출력메세지 추가" />
+    <MESSAGE value="검증로직 오타수정" />
+    <MESSAGE value="콘솔프린터 클래스 추가 및 출력 메세지 수정 ArithmeticCalculator클래스 -&gt; Calculator로 이름 수정" />
+    <MESSAGE value="파싱 메서드 분리" />
+    <MESSAGE value="주석 수정 및 코드 정렬" />
+    <option name="LAST_COMMIT_MESSAGE" value="주석 수정 및 코드 정렬" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
