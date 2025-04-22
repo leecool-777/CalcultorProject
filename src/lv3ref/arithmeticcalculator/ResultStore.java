@@ -2,7 +2,6 @@ package lv3ref.arithmeticcalculator;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class ResultStore {
 
@@ -40,9 +39,15 @@ public class ResultStore {
     입력된 값보다 큰 데이터 조회 메서드
     (실수 비교)
     */
-    public List<Number> findGreaterThan(Number compareNum) {
-        return resultStore.stream() //1. 데이터 준비
+    public void findGreaterThan(Number compareNum) {
+        List<Number> filteredNumbers = resultStore.stream() //1. 데이터 준비
                 .filter(number -> number.doubleValue() > compareNum.doubleValue()) //2. 중간 연산 등록
-                .collect(Collectors.toList()); //3. 최종 연산
+                .toList(); //3. 최종 연산
+
+        if (filteredNumbers.isEmpty()) {
+            System.out.printf("%n결과값 중 %s보다 큰 데이터는 없습니다.%n", compareNum);
+        }
+        System.out.printf("%n결과값 중 %s보다 큰 데이터는 %s 입니다.%n",compareNum, filteredNumbers);
+
     }
 }
