@@ -19,6 +19,14 @@ public class CalculationApp {
     }
 
     //기능
+    //문자열 파싱
+    private static Number parseIntegerOrDouble(String input) {
+        if (input.contains(".")) {
+            return Double.parseDouble(input);
+        }
+        return Integer.parseInt(input);
+    }
+
     public void start() {
         Scanner scanner = new Scanner(System.in);
 
@@ -48,7 +56,7 @@ public class CalculationApp {
                 scanner.nextLine();
 
                 //입력값 전달 및 연산 결과 반환
-                Number result = arithmeticCalculator.calculate(num1, num2, OperatorType.getOperatorType(operator));
+                Number result = arithmeticCalculator.calculate(num1, num2, OperatorType.fromSymbol(operator));
                 resultStore.addResult(result);
 
                 System.out.println("==========================================");
@@ -85,13 +93,5 @@ public class CalculationApp {
                 System.out.println("[오류] 잘못된 값입니다. 사칙연산 기호를 입력해주세요.");
             }
         }
-    }
-
-    //문자열 파싱
-    static Number parseIntegerOrDouble(String input) {
-        if (input.contains(".")) {
-            return Double.parseDouble(input);
-        }
-        return Integer.parseInt(input);
     }
 }

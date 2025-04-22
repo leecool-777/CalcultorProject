@@ -6,16 +6,16 @@ public enum OperatorType {
     MULTIPLY('*'),
     DIVIDE('/');
 
-    private final char operator;
+    private final char symbol;
 
 
-    OperatorType(char operator) {
-        this.operator = operator;
+    OperatorType(char symbol) {
+        this.symbol = symbol;
     }
 
-    public static OperatorType getOperatorType(char inputOperator) {
+    public static OperatorType fromSymbol(char inputSymbol) {
         for (OperatorType operatorType : OperatorType.values()) {
-            if (operatorType.operator == inputOperator) {
+            if (operatorType.symbol == inputSymbol) {
                 return operatorType;
             }
         }
