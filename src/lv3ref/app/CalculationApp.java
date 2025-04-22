@@ -6,23 +6,21 @@ import lv3ref.arithmeticcalculator.ResultStore;
 
 import java.util.Scanner;
 
-public class App {
-
+public class CalculationApp {
     //속성
-    private final ArithmeticCalculator<Number>  arithmeticCalculator;
     private final ResultStore resultStore;
-    //생성자
+    private final ArithmeticCalculator<Number> arithmeticCalculator;
 
-    public App() {
-        this.resultStore = new ResultStore();
-        this.arithmeticCalculator = new ArithmeticCalculator<>(resultStore);
+
+    //생성자
+    public CalculationApp(ResultStore resultStore, ArithmeticCalculator<Number> arithmeticCalculator) {
+        this.resultStore = resultStore;
+        this.arithmeticCalculator = arithmeticCalculator;
     }
 
     //기능
-
     public void start() {
         Scanner scanner = new Scanner(System.in);
-
 
         System.out.println("==========================================");
         System.out.println("                   계산기                  ");
@@ -47,10 +45,11 @@ public class App {
                 //사칙연산 입력
                 System.out.print("사칙연산 기호를 입력하세요(+ - * /): ");
                 char operator = scanner.next().charAt(0);
-                scanner.nextLine();//Scanner 버퍼 정리
+                scanner.nextLine();
 
                 //입력값 전달 및 연산 결과 반환
                 Number result = arithmeticCalculator.calculate(num1, num2, OperatorType.getOperatorType(operator));
+                resultStore.addResult(result);
 
                 System.out.println("==========================================");
                 System.out.println("결과: " + result);

@@ -5,14 +5,6 @@ package lv3ref.arithmeticcalculator;
  * 실수일 경우 Double로 결과 반환 및 저장
  */
 public class ArithmeticCalculator<T extends Number> {
-    //속성
-    private ResultStore resultStore;
-
-    //생성자
-
-    public ArithmeticCalculator(ResultStore resultStore) {
-        this.resultStore = resultStore;
-    }
 
     //기능
     public Number calculate(T num1, T num2, OperatorType operatorType) {
@@ -43,7 +35,6 @@ public class ArithmeticCalculator<T extends Number> {
                 }
             };
         }
-        resultStore.addResult(result);
         return result; //결과값 반환
     }
 }

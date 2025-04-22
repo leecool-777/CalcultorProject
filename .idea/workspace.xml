@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="ResultData-&gt; ResultStore 이름 수정">
-      <change afterPath="$PROJECT_DIR$/src/lv3ref/app/Main.java" afterDir="false" />
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="실행흐름제어 App클래스 수정 의존성 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3ref/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/app/CalculationApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3ref/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ArithmeticCalculator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ResultStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ResultStore.java" afterDir="false" />
     </list>
@@ -68,7 +68,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Debug",
-    "Application.Main.executor": "Debug",
+    "Application.Main.executor": "Run",
     "Application.lv2.App.executor": "Run",
     "Application.lv3.App.executor": "Run",
     "Application.lv3Ref.App.executor": "Run",
@@ -121,6 +121,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
+    <configuration name="CalculationApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lv3ref.app.CalculationApp" />
+      <module name="CalculatorProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lv3ref.arithmeticcalculator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lv3ref.app.Main" />
       <module name="CalculatorProject" />
@@ -140,19 +153,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lv3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="lv3ref.app.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lv3ref.app.App" />
-      <module name="CalculatorProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lv3ref.arithmeticcalculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,7 +195,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.lv3ref.app.App" />
+        <item itemvalue="Application.CalculationApp" />
         <item itemvalue="Application.lv3.App" />
         <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testCal" />
         <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testAiddtion" />
@@ -238,7 +238,7 @@
       <workItem from="1745216782455" duration="17372000" />
       <workItem from="1745238157557" duration="54000" />
       <workItem from="1745238393968" duration="2325000" />
-      <workItem from="1745277183125" duration="5311000" />
+      <workItem from="1745277183125" duration="13782000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -520,7 +520,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745225228846</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="실행흐름제어 App클래스 수정 의존성 수정">
+      <option name="closed" value="true" />
+      <created>1745283995263</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1745283995263</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -550,7 +558,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="결과 삭제 메서드 추가, 메인메서드 출력멘트 수정 및 데이터 삭제 옵션 추가" />
     <MESSAGE value="lv1 예외처리 추가" />
     <MESSAGE value="결과삭제 메서드 추가" />
     <MESSAGE value="결과삭제 메서드 추가, 메인메서드 출력 멘트 수정 및 데이터 삭제 옵션 추가" />
@@ -575,18 +582,8 @@
     <MESSAGE value="문자열 파싱 메서드 메인메서드로 분리 및 출력 메세지 수정" />
     <MESSAGE value="데이터 삭제 메서드 출력메세지 추가 및 이름 수정" />
     <MESSAGE value="ResultData-&gt; ResultStore 이름 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="ResultData-&gt; ResultStore 이름 수정" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/lv3ref/app/App.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="실행흐름제어 App클래스 수정 의존성 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="실행흐름제어 App클래스 수정 의존성 수정" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -11,7 +11,7 @@ public class ResultStore {
 
     //기능
     //결과 데이터 추가
-    void addResult(Number result) {
+    public void addResult(Number result) {
         resultStore.add(result);
     }
 
@@ -28,7 +28,6 @@ public class ResultStore {
         System.out.println("결과값을 삭제했습니다.");
         System.out.println("결과 데이터: " + getResultStore());
     }
-
 
 
     /*
