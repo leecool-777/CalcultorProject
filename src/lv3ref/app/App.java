@@ -1,4 +1,4 @@
-package lv3ref;
+package lv3ref.app;
 
 import lv3ref.arithmeticcalculator.ArithmeticCalculator;
 import lv3ref.arithmeticcalculator.OperatorType;
@@ -8,10 +8,20 @@ import java.util.Scanner;
 
 public class App {
 
-    public static void main(String[] args) {
+    //속성
+    private final ArithmeticCalculator<Number>  arithmeticCalculator;
+    private final ResultStore resultStore;
+    //생성자
+
+    public App() {
+        this.resultStore = new ResultStore();
+        this.arithmeticCalculator = new ArithmeticCalculator<>(resultStore);
+    }
+
+    //기능
+
+    public void start() {
         Scanner scanner = new Scanner(System.in);
-        ArithmeticCalculator<Number> arithmeticCalculator = new ArithmeticCalculator<>();
-        ResultStore<Number> resultData = new ResultStore<>();
 
 
         System.out.println("==========================================");
@@ -41,11 +51,10 @@ public class App {
 
                 //입력값 전달 및 연산 결과 반환
                 Number result = arithmeticCalculator.calculate(num1, num2, OperatorType.getOperatorType(operator));
-                resultData.addResult(result);
 
                 System.out.println("==========================================");
                 System.out.println("결과: " + result);
-                System.out.println("결과 데이터: " + resultData.getResults());
+                System.out.println("결과 데이터: " + resultStore.getResultStore());
                 System.out.println("==========================================");
 
 
@@ -56,7 +65,7 @@ public class App {
                         System.out.println("프로그램을 종료합니다.");
                         break label;
                     case "delete":
-                        resultData.removeFirstResult();
+                        resultStore.removeFirstResult();
                         break;
                     //값 비교
                     case "compare":
@@ -64,7 +73,7 @@ public class App {
                         String inputCompareNum = scanner.nextLine();
                         Number compareNum = parseIntegerOrDouble(inputCompareNum);
                         System.out.println("결과값 중 " + compareNum + "보다 큰 데이터는 "
-                                + resultData.findGreaterThan(compareNum) + "입니다.");
+                                + resultStore.findGreaterThan(compareNum) + "입니다.");
                         break;
                 }
 

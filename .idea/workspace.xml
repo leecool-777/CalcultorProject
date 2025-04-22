@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="데이터 삭제 메서드 출력메세지 추가 및 이름 수정">
+    <list default="true" id="7622d7cb-bd8b-4b82-be6b-c868f7f1e618" name="Changes" comment="ResultData-&gt; ResultStore 이름 수정">
+      <change afterPath="$PROJECT_DIR$/src/lv3ref/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lv3ref/OperatorType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/OperatorType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3ref/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/app/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ArithmeticCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ArithmeticCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ResultStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/lv3ref/arithmeticcalculator/ResultStore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="lv2" />
+        <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,41 +65,42 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.lv2.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.lv3.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.lv3Ref.App.executor&quot;: &quot;Run&quot;,
-    &quot;Application.lv3ref.App.executor&quot;: &quot;Run&quot;,
-    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
-    &quot;JUnit.ArithmeticCalculatorTestTest.testAiddtion.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ArithmeticCalculatorTestTest.testCal.executor&quot;: &quot;Run&quot;,
-    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
-    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Siwon/Desktop/스파르타/CalculatorProject/CalculatorProject/src/lv3ref&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.language.and.region&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
-    &quot;애플리케이션.lv3.App.executor&quot;: &quot;Run&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Debug",
+    "Application.Main.executor": "Debug",
+    "Application.lv2.App.executor": "Run",
+    "Application.lv3.App.executor": "Run",
+    "Application.lv3Ref.App.executor": "Run",
+    "Application.lv3ref.App.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.ArithmeticCalculatorTestTest.testAiddtion.executor": "Run",
+    "JUnit.ArithmeticCalculatorTestTest.testCal.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "extract.method.default.visibility": "private",
+    "git-widget-placeholder": "lv3ref",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Siwon/Desktop/스파르타/인프런 소스코드/계산기 예시/JavaCalculator-main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.language.and.region",
+    "vue.rearranger.settings.migration": "true",
+    "애플리케이션.lv3.App.executor": "Run"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Siwon\Desktop\스파르타\CalculatorProject\CalculatorProject\src\lv3ref" />
@@ -112,14 +116,17 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="lv3Ref.test" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lv3ref2.arithmeticcalculator" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.lv3ref.App">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lv3Ref.App" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lv3ref.app.Main" />
       <module name="CalculatorProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lv3ref.*" />
+          <option name="PATTERN" value="lv3ref.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -140,12 +147,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lv3ref.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lv3ref.App" />
+    <configuration name="lv3ref.app.App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lv3ref.app.App" />
       <module name="CalculatorProject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lv3ref.*" />
+          <option name="PATTERN" value="lv3ref.arithmeticcalculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -187,7 +194,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.lv3ref.App" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.lv3ref.app.App" />
         <item itemvalue="Application.lv3.App" />
         <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testCal" />
         <item itemvalue="JUnit.ArithmeticCalculatorTestTest.testAiddtion" />
@@ -227,7 +235,10 @@
       <workItem from="1745139113901" duration="145000" />
       <workItem from="1745193736936" duration="399000" />
       <workItem from="1745213037233" duration="599000" />
-      <workItem from="1745216782455" duration="349000" />
+      <workItem from="1745216782455" duration="17372000" />
+      <workItem from="1745238157557" duration="54000" />
+      <workItem from="1745238393968" duration="2325000" />
+      <workItem from="1745277183125" duration="5311000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -501,7 +512,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745056126384</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="ResultData-&gt; ResultStore 이름 수정">
+      <option name="closed" value="true" />
+      <created>1745225228846</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1745225228846</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,7 +537,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="lv3ref" />
                       </list>
                     </value>
                   </entry>
@@ -531,7 +550,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="예외처리 추가" />
     <MESSAGE value="결과 삭제 메서드 추가, 메인메서드 출력멘트 수정 및 데이터 삭제 옵션 추가" />
     <MESSAGE value="lv1 예외처리 추가" />
     <MESSAGE value="결과삭제 메서드 추가" />
@@ -556,7 +574,19 @@
     <MESSAGE value="오타 수정 및 이름 변경" />
     <MESSAGE value="문자열 파싱 메서드 메인메서드로 분리 및 출력 메세지 수정" />
     <MESSAGE value="데이터 삭제 메서드 출력메세지 추가 및 이름 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="데이터 삭제 메서드 출력메세지 추가 및 이름 수정" />
+    <MESSAGE value="ResultData-&gt; ResultStore 이름 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="ResultData-&gt; ResultStore 이름 수정" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/lv3ref/app/App.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
