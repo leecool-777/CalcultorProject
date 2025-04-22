@@ -4,7 +4,7 @@ package lv3ref.arithmeticcalculator;
  * 두 개의 입력값 모두 정수일 경우 Integer로 결과 반환 및 저장(나눗셈은 Double)
  * 실수일 경우 Double로 결과 반환 및 저장
  */
-public class ArithmeticCalculator<T extends Number> {
+public class Calculator<T extends Number> {
 
     //기능
     public Number calculate(T num1, T num2, OperatorType operatorType) {

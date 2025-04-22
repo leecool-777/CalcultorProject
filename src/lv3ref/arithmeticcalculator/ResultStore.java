@@ -46,8 +46,9 @@ public class ResultStore {
 
         if (filteredNumbers.isEmpty()) {
             System.out.printf("%n결과값 중 %s보다 큰 데이터는 없습니다.%n", compareNum);
+        } else {
+            System.out.printf("%n결과값 중 %s보다 큰 데이터는 %s 입니다.%n",compareNum, filteredNumbers);
         }
-        System.out.printf("%n결과값 중 %s보다 큰 데이터는 %s 입니다.%n",compareNum, filteredNumbers);
 
     }
 }

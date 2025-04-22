@@ -3,21 +3,21 @@ package lv3ref.print;
 import lv3ref.arithmeticcalculator.ResultStore;
 
 public class ConsolePrinter {
-    public void welcomeMessage() {
-        System.out.println("==========================================");
+    public static void welcomeMessage() {
+        printLine();
         System.out.println("                   계산기                  ");
-        System.out.println("==========================================");
+        printLine();
     }
 
-    public void displayResult(Number result, ResultStore resultStore) {
-        System.out.println("==========================================");
+    public static void displayResult(Number result, ResultStore resultStore) {
+        printLine();
         System.out.println("결과: " + result);
         System.out.println("결과 데이터: " + resultStore.getResultStore());
-        System.out.println("==========================================");
+        printLine();
     }
-    public void displayCommands() {
+    public static void displayCommands() {
         System.out.println("                   명령어                  ");
-        System.out.println("==========================================");
+        printLine();
         System.out.println("계속하기: Enter 클릭");
         System.out.println("값 비교: compare ");
         System.out.println("오래된 결과 삭제: delete ");
@@ -25,5 +25,7 @@ public class ConsolePrinter {
         System.out.println("종료: exit ");
         System.out.print("명령어를 입력해 주세요: ");
     }
-
+    public static void printLine() {
+        System.out.println("========================================");
+    }
 }
